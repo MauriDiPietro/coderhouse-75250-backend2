@@ -9,4 +9,8 @@ router.post("/", controllers.create);
 
 router.get("/:id", controllers.getById);
 
+router.put('/:id', controllers.update);
+
+router.delete('/:id', controllers.remove);
+
 export default router;
