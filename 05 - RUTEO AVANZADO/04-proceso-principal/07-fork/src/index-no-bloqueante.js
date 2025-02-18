@@ -17,6 +17,7 @@ app.get('/', (req, res) => {
     visitas,
   });
 });
+
 app.get('/calculo', (req, res) => {
   const child = fork(scriptPath);
   child.send('start'); 
